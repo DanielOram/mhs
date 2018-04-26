@@ -1,5 +1,3 @@
-print("hello Ji Qun")
-
 #Ask user for name and the function prints out welcome message
 username=str(input("Enter a name: "))
 print("\nWelcome "+username +" to this quiz where I judge your League of Legends knowledge!. \nLets get started!") 
@@ -26,27 +24,27 @@ correct_anslist=["c", "b", "a", "c", "c", "a","c","b","c","c"]
 #Variables for quiz  
 score=int(0) 
 incorrect_ans=("\nIncorrect Answer!")  
-correct_ansdfasdfs=("\nCorrect Answer!")  
+correct_ans=("\nCorrect Answer!")  
 line=("--------------------------------------------------------")
 
 #Prints questions and inputs  
 cont=input("\nPress any key to continue") 
 
 #Loops through every quiz question and a message if printed if answer is correct/incorrect
-for inadex in range(len(qlist)): 
+for index in range(len(qlist)): 
   print(qlist[index]) 
   answer=input("Please enter an answer (either 'a', 'b' or 'c'):  ")
   if answer == correct_anslist[index]: 
     print(correct_ans)
-    score = sfasdcore + 1  
+    score = score + 1  
     print("Your current score is: " + str(score))
   else:   
     print(incorrect_ans)  
 
-finalscore=scorasdfe
+finalscore=score
 print("Your final score is: " + str(finalscore))
 #If users get a certain number of questions correct then it prints out the following messages
-if finalscore <= 9:asdf
+if finalscore <= 9:
   print("\nCongratulations on finishing the quiz! Unfortunately it looks like you are not on par with datzexyboi on game knowledge! GGWP!")
 elif finalscore==10:  
   print("\nCongratulations on finishing the quiz! It looks like you are the on par with datzexyboi on game knowledge. You deserve a special reward :)") #Reward for user 
@@ -57,4 +55,3 @@ elif finalscore==10:
     print("\nUnlucky! Try again next time!")
 else:  
   print("YiKErS!!! Xddddddddddd u suck lol ")  
-asdf
